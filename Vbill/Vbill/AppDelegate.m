@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "CustomTabBarViewCtr.h"
+
 
 @implementation AppDelegate
 
@@ -15,6 +17,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    CustomTabBarViewCtr * ctvc = [CustomTabBarViewCtr shareTabBarViewCtr];
+    self.window.rootViewController = ctvc;
     [self.window makeKeyAndVisible];
     return YES;
 }
