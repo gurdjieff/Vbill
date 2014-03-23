@@ -8,18 +8,58 @@
 
 #import "AppDelegate.h"
 #import "CustomTabBarViewCtr.h"
+#import "IntroduceImages.h"
+#import "LoginViewController.h"
+#import "CustomNavigationViewCtr.h"
+
 
 
 @implementation AppDelegate
 
+-(void)pushLoginViewCtr
+{
+    NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
+    if ([userDefaults boolForKey:@"ifLogin"] == NO) {
+        CustomTabBarViewCtr * instance = [CustomTabBarViewCtr shareTabBarViewCtr];
+        UIViewController *controller = instance.selectedViewController;
+        if ([controller isKindOfClass:[UINavigationController class]]){
+			
+            controller = [(UINavigationController *)controller visibleViewController];
+            LoginViewController * lpViewCtr = [[LoginViewController alloc] init];
+//            CustomNavigationViewCtr * cvc4 = [[CustomNavigationViewCtr alloc] initWithRootViewController:lpViewCtr];
+//            [lpViewCtr release];
+            [controller presentViewController:lpViewCtr animated:YES completion:nil];
+        }
+    } else {
+        NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
+        NSString * sessionValue = [userDefaults objectForKey:@"cookie"];
+        if (sessionValue) {
+            NSMutableDictionary *cookieProperties = [NSMutableDictionary dictionary];
+            [cookieProperties setObject:@"AutoReLogin" forKey:NSHTTPCookieName];
+            [cookieProperties setObject:sessionValue forKey:NSHTTPCookieValue];
+            [cookieProperties setObject:@"/" forKey:NSHTTPCookiePath];
+            
+            NSArray * ary = [[serverIp substringFromIndex:7] componentsSeparatedByString:@":"];
+            if ([ary isKindOfClass:[NSArray class]] && [ary count] > 0) {
+                [cookieProperties setObject:ary[0] forKey:NSHTTPCookieDomain];
+            }
+            NSHTTPCookie *cookie = [NSHTTPCookie cookieWithProperties:cookieProperties];
+            [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
+        }
+    }
+}
+
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     CustomTabBarViewCtr * ctvc = [CustomTabBarViewCtr shareTabBarViewCtr];
     self.window.rootViewController = ctvc;
     [self.window makeKeyAndVisible];
+    [self pushLoginViewCtr];
+    [IntroduceImages addIntruduceImages];
     return YES;
 }
 

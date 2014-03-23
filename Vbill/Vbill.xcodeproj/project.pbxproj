@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5034784318DF41BC00BA6819 /* launch1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5034784018DF41BC00BA6819 /* launch1.jpg */; };
+		5034784418DF41BC00BA6819 /* launch2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5034784118DF41BC00BA6819 /* launch2.jpg */; };
+		5034784518DF41BC00BA6819 /* launch3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5034784218DF41BC00BA6819 /* launch3.jpg */; };
+		5034784918DF42D600BA6819 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5034784818DF42D600BA6819 /* LoginViewController.m */; };
+		5034784B18DF46F900BA6819 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5034784A18DF46F900BA6819 /* login.jpg */; };
 		50AE06D118DC87CC00A88817 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AE06D018DC87CC00A88817 /* Foundation.framework */; };
 		50AE06D318DC87CC00A88817 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AE06D218DC87CC00A88817 /* CoreGraphics.framework */; };
 		50AE06D518DC87CC00A88817 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AE06D418DC87CC00A88817 /* UIKit.framework */; };
@@ -212,6 +217,7 @@
 		50AE0A5218DC906A00A88817 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AE0A0918DC906A00A88817 /* ThirdViewController.m */; };
 		50AE0A5F18DC90EE00A88817 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AE0A5E18DC90EE00A88817 /* FourthViewController.m */; };
 		50AE0A6218DC92B700A88817 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AE0A6118DC92B700A88817 /* BaseViewController.m */; };
+		50AE0A6518DC98E400A88817 /* IntroduceImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AE0A6418DC98E400A88817 /* IntroduceImages.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +231,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5034784018DF41BC00BA6819 /* launch1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch1.jpg; sourceTree = "<group>"; };
+		5034784118DF41BC00BA6819 /* launch2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch2.jpg; sourceTree = "<group>"; };
+		5034784218DF41BC00BA6819 /* launch3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch3.jpg; sourceTree = "<group>"; };
+		5034784718DF42D600BA6819 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		5034784818DF42D600BA6819 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		5034784A18DF46F900BA6819 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpg; sourceTree = "<group>"; };
 		50AE06CD18DC87CC00A88817 /* Vbill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vbill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50AE06D018DC87CC00A88817 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		50AE06D218DC87CC00A88817 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -501,6 +513,8 @@
 		50AE0A5E18DC90EE00A88817 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		50AE0A6018DC92B700A88817 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		50AE0A6118DC92B700A88817 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		50AE0A6318DC98E400A88817 /* IntroduceImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroduceImages.h; sourceTree = "<group>"; };
+		50AE0A6418DC98E400A88817 /* IntroduceImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroduceImages.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -538,6 +552,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5034783F18DF41BC00BA6819 /* launchImages */ = {
+			isa = PBXGroup;
+			children = (
+				5034784018DF41BC00BA6819 /* launch1.jpg */,
+				5034784118DF41BC00BA6819 /* launch2.jpg */,
+				5034784218DF41BC00BA6819 /* launch3.jpg */,
+			);
+			path = launchImages;
+			sourceTree = "<group>";
+		};
+		5034784618DF42D600BA6819 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				5034784718DF42D600BA6819 /* LoginViewController.h */,
+				5034784818DF42D600BA6819 /* LoginViewController.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
 		50AE06C418DC87CC00A88817 = {
 			isa = PBXGroup;
 			children = (
@@ -631,6 +664,8 @@
 		50AE06FF18DC8B7100A88817 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5034784A18DF46F900BA6819 /* login.jpg */,
+				5034783F18DF41BC00BA6819 /* launchImages */,
 				50AE070018DC8B7100A88817 /* 0.png */,
 				50AE070118DC8B7100A88817 /* 1.jpg */,
 				50AE070218DC8B7100A88817 /* 1.png */,
@@ -950,6 +985,8 @@
 		50AE097F18DC8FA300A88817 /* customInterface */ = {
 			isa = PBXGroup;
 			children = (
+				50AE0A6318DC98E400A88817 /* IntroduceImages.h */,
+				50AE0A6418DC98E400A88817 /* IntroduceImages.m */,
 				50AE0A6018DC92B700A88817 /* BaseViewController.h */,
 				50AE0A6118DC92B700A88817 /* BaseViewController.m */,
 				50AE098418DC8FA300A88817 /* CustomButton.h */,
@@ -976,6 +1013,7 @@
 		50AE099618DC906900A88817 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				5034784618DF42D600BA6819 /* login */,
 				50AE09C418DC906A00A88817 /* FirstViewController.h */,
 				50AE09C518DC906A00A88817 /* FirstViewController.m */,
 				50AE09F518DC906A00A88817 /* SecondViewController.h */,
@@ -1100,6 +1138,7 @@
 				50AE08E018DC8B7200A88817 /* xiala.png in Resources */,
 				50AE08DE18DC8B7200A88817 /* wrongShow.png in Resources */,
 				50AE088418DC8B7200A88817 /* aboutUs.png in Resources */,
+				5034784318DF41BC00BA6819 /* launch1.jpg in Resources */,
 				50AE08E318DC8B7200A88817 /* yellowArrow.png in Resources */,
 				50AE089318DC8B7200A88817 /* doingjihua.png in Resources */,
 				50AE08E718DC8B7200A88817 /* yingyong01.png in Resources */,
@@ -1123,6 +1162,7 @@
 				50AE089418DC8B7200A88817 /* donejihua.png in Resources */,
 				50AE08E518DC8B7200A88817 /* yellowStar.png in Resources */,
 				50AE088718DC8B7200A88817 /* book.png in Resources */,
+				5034784B18DF46F900BA6819 /* login.jpg in Resources */,
 				50AE087818DC8B7200A88817 /* 2.jpg in Resources */,
 				50AE08AC18DC8B7200A88817 /* navigatebar2.png in Resources */,
 				50AE08EA18DC8B7200A88817 /* yingyong04.png in Resources */,
@@ -1175,6 +1215,7 @@
 				50AE08BC18DC8B7200A88817 /* purple.png in Resources */,
 				50AE08D118DC8B7200A88817 /* submit.png in Resources */,
 				50AE08A618DC8B7200A88817 /* login1.png in Resources */,
+				5034784418DF41BC00BA6819 /* launch2.jpg in Resources */,
 				50AE08AD18DC8B7200A88817 /* notRead.png in Resources */,
 				50AE08C518DC8B7200A88817 /* respond.png in Resources */,
 				50AE088E18DC8B7200A88817 /* cellcontent.png in Resources */,
@@ -1182,6 +1223,7 @@
 				50AE089118DC8B7200A88817 /* dingshitixing.png in Resources */,
 				50AE08B218DC8B7200A88817 /* photoblack.png in Resources */,
 				50AE08B418DC8B7200A88817 /* phototopwhite.png in Resources */,
+				5034784518DF41BC00BA6819 /* launch3.jpg in Resources */,
 				50AE08DA18DC8B7200A88817 /* weiwancheng.png in Resources */,
 				50AE08E218DC8B7200A88817 /* yanjing.png in Resources */,
 				50AE088118DC8B7200A88817 /* 7.png in Resources */,
@@ -1219,6 +1261,7 @@
 				50AE091E18DC8B7200A88817 /* UIImageView+WebCache.m in Sources */,
 				50AE08FB18DC8B7200A88817 /* ASIHTTPRequest.m in Sources */,
 				50AE0A5218DC906A00A88817 /* ThirdViewController.m in Sources */,
+				50AE0A6518DC98E400A88817 /* IntroduceImages.m in Sources */,
 				50AE091718DC8B7200A88817 /* SBJsonWriter.m in Sources */,
 				50AE099018DC8FA300A88817 /* CustomTabBarViewCtr.m in Sources */,
 				50AE096218DC8B7200A88817 /* UIImageView+setImagewithFile.m in Sources */,
@@ -1252,6 +1295,7 @@
 				50AE08F718DC8B7200A88817 /* ASIDataCompressor.m in Sources */,
 				50AE08F218DC8B7200A88817 /* NSString+CustomCategory.m in Sources */,
 				50AE090F18DC8B7200A88817 /* commonDataOperation.m in Sources */,
+				5034784918DF42D600BA6819 /* LoginViewController.m in Sources */,
 				50AE090318DC8B7200A88817 /* ASICloudFilesObjectRequest.m in Sources */,
 				50AE090818DC8B7200A88817 /* ASIS3ObjectRequest.m in Sources */,
 				50AE08F918DC8B7200A88817 /* ASIDownloadCache.m in Sources */,
@@ -1469,6 +1513,7 @@
 				50AE06FB18DC87CC00A88817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50AE06FC18DC87CC00A88817 /* Build configuration list for PBXNativeTarget "VbillTests" */ = {
 			isa = XCConfigurationList;
@@ -1477,6 +1522,7 @@
 				50AE06FE18DC87CC00A88817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

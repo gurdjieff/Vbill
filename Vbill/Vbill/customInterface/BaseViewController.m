@@ -57,7 +57,9 @@
 -(void)addBaseSubviews
 {
     mpNavitateView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-    mpNavitateView.image = [UIImage imageNamed:@"navigatebar2.png"];
+//    mpNavitateView.image = [UIImage imageNamed:@"navigatebar2.png"];
+    mpNavitateView.backgroundColor = [UIColor blueColor];
+
     [self.view addSubview:mpNavitateView];
     mpNavitateView.userInteractionEnabled = YES;
     

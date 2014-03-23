@@ -36,6 +36,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    mpTitleLabel.text = @"更多";
 }
 
 - (void)didReceiveMemoryWarning
