@@ -27,6 +27,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    [self addLeftButton];
+//    mpBaseView addSubview:<#(UIView *)#>
+//    mpTitleLabel.text = @"";
 }
 - (void)didReceiveMemoryWarning
 {
